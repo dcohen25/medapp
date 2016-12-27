@@ -1,0 +1,214 @@
+html, body {
+	height: 100%;
+	font-family: helvetica;
+}
+h1, h2, h3, h4, h5, h6, a, ul, ol, li, p, div, body, footer, header {
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+a {
+	text-decoration: none;
+	color: inherit; 
+}
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.center {
+	text-align: center;
+}
+.bg1 {
+	background-color: #F2F2F2;
+}
+.bg2 {
+	background-color: #4286f4;
+}
+.bg3 {
+	background-color: #75777a;
+}
+.bg4 {
+	background-color: white;
+}
+.c1 {
+	color: white;
+}
+.c2 {
+	color: #75777a;
+}
+.c3 {
+	color: #7c7c7c;
+}
+.shadow {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),
+	0 0 0 1px rgba(0,0,0,0.08);
+}
+.fixed {
+	position: fixed;
+}
+header {
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+}
+#header-logo {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+#navbar {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+.navbar-item {
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+.navbar-link {
+	display: block;
+	padding: 10px;
+}		
+#sidebar-toggle {
+	position: absolute;
+	top: 20px;
+	margin-right: 50px;
+	left: 15px;
+	cursor: pointer;
+}
+.sidebar-toggle-line {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+}
+#main {
+	padding-top: 80px;
+}
+#main-content {
+	padding: 20px;
+}
+#condition-content {
+	margin: 30px 0 30px 0;
+}
+.condition-section {
+	margin-bottom: 50px;
+}
+.condition-section-header {
+	margin-bottom: 15px;
+}
+#sidebar {
+	z-index: 1;
+	width: 250px;
+	position: fixed;
+	top: 80px;
+	height: 100%;
+}
+
+.sidebar-menu-link {
+	display:block;
+	padding: 25px;
+}
+.sidebar-menu-item {
+	list-style-type: none;
+}
+.sidebar-menu-item:hover {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),
+	0 0 0 1px rgba(0,0,0,0.08);
+}
+#home-header-background-triangle {
+    width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 400px 400px;
+	position: absolute;
+	bottom: 0;
+	border-color: transparent transparent #ffffff transparent;
+}
+#home-header-background {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #106cff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#106cff, #adf9ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#106cff, #adf9ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#106cff, #adf9ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#106cff, #adf9ff); /* Standard syntax (must be last) */
+}
+#home-intro {
+	margin-top: 50px;
+	width: 100%;
+	height: 500px;
+}
+#home-intro-header {
+	margin-bottom: 25px;
+}
+#home-see-more {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display:inline-block;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#home-see-more-icon{
+	font-size: 80px;
+}
+#home-menu {
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+.home-menu-item {
+	display: inline-block;
+	list-style-type: none;
+	margin: 40px 60px 40px 60px;
+}
+.home-menu-link {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.home-menu-item-label {
+	margin-top: 25px;
+}
+#home-menu-condition {
+	margin-top: 40px;
+	width: 50px;
+	height: 50px;
+}
+#home-menu-tools {
+	margin-top: 35px;
+	font-size:50px;
+}
+#home-menu-communication {
+	margin-top: 35px;
+	font-size:50px;
+}
+footer {
+	padding: 40px;
+}
+.footer-section {
+	margin-right: 60px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footer-section-header {
+	margin-bottom: 20px;
+}
+.footer-section-header-title {
+	font-weight: bold;
+}
+.footer-section-list-item {
+	margin-bottom: 5px;
+	list-style: none;	
+}
+
+@media screen and (max-width: 1300px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+   #header-logo {
+       left: 80px;
+   }
+}
