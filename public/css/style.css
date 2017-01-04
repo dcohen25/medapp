@@ -1,6 +1,9 @@
-html, body {
+html {
 	height: 100%;
 	font-family: helvetica;
+}
+body {
+	min-height: 100%;
 }
 h1, h2, h3, h4, h5, h6, a, ul, ol, li, p, div, body, footer, header {
 	margin: 0;
@@ -31,6 +34,10 @@ a {
 .bg4 {
 	background-color: white;
 }
+.bg5 {
+	background-color: #008aff;
+}
+
 .c1 {
 	color: white;
 }
@@ -39,6 +46,16 @@ a {
 }
 .c3 {
 	color: #7c7c7c;
+}
+.c4 {
+	color: black;
+}
+.fade {
+  	transition: 0.2s linear all;
+	opacity: 1; 
+}	
+.fade.ng-hide {
+	opacity: 0;
 }
 .shadow {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),
@@ -86,11 +103,8 @@ header {
 #main {
 	padding-top: 80px;
 }
-#main-content {
-	padding: 20px;
-}
 #condition-content {
-	margin: 30px 0 30px 0;
+	padding: 50px;
 }
 .condition-section {
 	margin-bottom: 50px;
@@ -118,47 +132,44 @@ header {
 	0 0 0 1px rgba(0,0,0,0.08);
 }
 #home-header-background-triangle {
-    width: 0;
-	height: 0;
 	border-style: solid;
-	border-width: 0 0 400px 400px;
 	position: absolute;
 	bottom: 0;
 	border-color: transparent transparent #ffffff transparent;
 }
 #home-header-background {
 	position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #106cff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#106cff, #adf9ff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#106cff, #adf9ff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#106cff, #adf9ff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#106cff, #adf9ff); /* Standard syntax (must be last) */
+    	height: 100%;
+	width: 100%;
+	background: #106cff; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(#106cff, #adf9ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#106cff, #adf9ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#106cff, #adf9ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#106cff, #adf9ff); /* Standard syntax (must be last) */
+}
+#home-header {
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 #home-intro {
-	margin-top: 50px;
-	width: 100%;
-	height: 500px;
+	margin-top: 180px;
 }
 #home-intro-header {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 #home-see-more {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	display:inline-block;
-	cursor: pointer;
-	margin-bottom: 20px;
+	bottom: 15;
 }
 #home-see-more-icon{
 	font-size: 80px;
 }
 #home-menu {
 	margin-top: 150px;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 .home-menu-item {
 	display: inline-block;
